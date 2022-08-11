@@ -1,0 +1,20 @@
+[tool.isort]
+profile = "black"
+line_length = 120
+src_paths=["framework", "projects"]
+
+[tool.black]
+line-length = 120
+target-version = ['py310']
+
+[tool.interrogate]
+fail-under = 90
+exclude = ["setup.py", "docs", "build", "tests"]
+ignore-init-method = true
+ignore-init-module = true
+ignore-magic = true
+ignore-property-decorators = true
+ignore-module = true
+ignore-nested-functions = true
+ignore-nested-classes = true
+ignore-setters = true

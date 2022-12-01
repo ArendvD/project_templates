@@ -17,4 +17,4 @@ The `.pre-commit-config.yaml` file lists the hooks and versions that should be i
 Configurations of more complex tools are detailed in `pyproject.toml`. For example, you can detail line length here and make different tools compatible.
 One notable exception is `flake8` which does not support this configuration method. It is configured in `.flake8` instead.
 
-These hooks will be executed on every commit, but can also be run manually with `pre-commit run`. To ignore any githooks, use the `--noverify` flag on a git action.
+These hooks will be executed on every commit, but can also be run manually with `pre-commit run`. To ignore any githooks, use the `--no-verify` flag on a git action.
